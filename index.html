@@ -6,13 +6,17 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <title>Document</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Akronim&family=Noto+Sans+Gurmukhi:wght@100..900&display=swap" rel="stylesheet">
 
   <style>
+
     *{
       margin: 0;
       padding: 0;
       box-sizing: border-box;
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-family:"Chathura";
     }
     body{
       background-color: darkgray;
@@ -101,13 +105,17 @@
       gap: 30px;
     }
     #btn{
-      background-color: rgb(65, 65, 144);
+      background-color:green;
       padding: 0px 10px;
       height: 40px;
       width: 130px;
-      border-radius: 10px;
+      border-radius: 5px;
       border: none;
       cursor: pointer;
+      color: white;
+      font-weight: 700;
+
+
     }
     .click-me{
       display: flex;
@@ -133,7 +141,8 @@
     .country img{
       width: 400px;
       height: 500px;
-      clip-path: polygon(0% 0%, 0% 100%, 25% 100%, 24% 75%, 47% 31%, 73% 74%, 25% 75%, 16% 100%, 100% 100%, 100% 0%);
+      mix-blend-mode:darken;
+    
     }
     .later2{
       text-align: center;
@@ -182,15 +191,137 @@
       display: block;
       width: 100%;
     }
+    .youtube{
+      padding: 20px;
+    }
     .youtube2 h2{
 background-color: #fff;
 text-align: center;
 margin-top: 70px;
 padding: 30px;
-border-style:;
+
+    }
+    .menu{
+      width: 100%;
+      height: 100%;
+      display: flex;
+      padding: 0px 200px;
+      gap: 20px;
+      position: relative;
+      margin-top: 30px;
+    }
+    .menu-me{
+      background-color: #fff;
+      
+    }
+    .menu-me img{
+      padding: 10px;
+    
+    }
+    
+    .heart2 i{
+      background-color: #fff;
+      padding: 10px 10px;
     }
 
-    @media only screen and (max-width:600px){
+    .star2 i{
+      color: green;
+    }
+    .star{
+      padding: 10px;
+    }
+    .star2 p{
+      font-weight: 700;
+    }
+    .doller{
+      position: relative;
+    }
+    .doller2{
+      display: flex;
+ 
+      position: absolute;
+      right: 45%;
+      bottom: 20%;
+    }
+    .btn{
+      padding: 4px 10px;
+      background-color: green;
+      color: #fff;
+      border: none;
+      border-radius: 5px; 
+    }
+    .google h3{
+      text-align: center;
+    }
+    .founder form{
+      width: 100%;
+      padding: 10px 300px;
+    }
+    form input, form textarea{
+            width: 100%;
+            border: 0;
+            outline: none;
+            background: #262626;
+            padding: 15px;
+            margin: 15px 0;
+            color: #fff;
+            font-size: 18px;
+            border-radius: 6px;
+            }
+            form .btn2{
+                padding: 14px 60px;
+                font-size: 18px;
+                margin-top: 20px;
+                cursor:pointer;
+            }
+            
+            form .btn2:hover{
+                
+                
+            }
+            nav .fa-solid{
+              display: none;
+            }
+    
+
+    @media only screen and (max-width:900px){
+
+      nav .fa-solid{
+        display: block;
+        font-size: 25px;
+       
+       
+     
+      }
+      .fa-bars{
+       margin-left: 700px;
+      }
+      nav ul{
+        background-color: aqua;
+        position: fixed;
+        top: 0;
+        right: -200;
+        width: 200px;
+        height: 100vh;
+        z-index: 2;
+        transition: right 0.5;
+       
+      }
+      nav ul li{
+        display: block;
+        margin: px;
+        font-weight: 700;
+        color: black;
+      }
+      nav .fa-solid{
+
+        position: absolute;
+                top: 25px;
+                left: 25px;
+                cursor: pointer;
+                color: black;
+      }
+
       .click-me{
         flex-direction: column;
       }
@@ -201,7 +332,48 @@ border-style:;
       width: 400px;
       height: 500px;
     }
+    .later2 h2{
+      text-align: center;
     }
+    .country2 h2,p {
+      
+      flex-direction: column;
+    }
+    .menu{
+      flex-direction: column;
+      padding: 20px;
+    }   .menu-me img{
+      width: 100%;
+      height: 100%;
+      padding: 30px;
+    }
+    .star{
+      padding: 30px;
+    /* }
+    .star2 i{
+      margin-bottom: 20px;
+    }
+    .star2 h3{
+      margin-bottom: 30px;
+    }
+    .star2 p{
+      margin-bottom: 40px;
+      flex-direction: column;
+
+    } */
+    .btn{
+      margin-top: 10px;
+    }
+    .doller2{
+      position: absolute;
+      left: 25%;
+    }
+
+    }
+    .founder form{
+      padding: 10px 10px;
+    }
+  }
    
    
   </style>
@@ -211,12 +383,14 @@ border-style:;
     <div class="container">
       <nav>
         <h4>Web Developer</h4>
-        <ul>
+        <ul id="sidemenu">
           <li><a href="#">Home</a></li>
-          <li><a href="#">about</a></li>
-          <li><a href="#">Services</a></li>
+          <li><a href="#">Dishes</a></li>
+          <li><a href="#">About</a></li>
           <li><a href="#">Contact</a></li>
+          <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
         </ul>
+        <i class="fa-solid fa-bars" onclick="openmenu()" style="color: red;"></i>
       </nav>
     </div>
     <video autoplay loop muted src="/video/vecteezy_craft-beef-burger-and-french-fries-on-a-black-background_3580260.mp4"></video>
@@ -234,16 +408,16 @@ border-style:;
           
           <div class="awesome">
             <div class="awesome-me">
-              <p>Tasty Food</p>
-              <i class="fa-regular fa-star"></i>
-              <i class="fa-regular fa-star"></i>
-              <i class="fa-regular fa-star"></i>
-              <i class="fa-regular fa-star"></i>
-              <i class="fa-regular fa-star"></i>
+              <h3>Tasty Food</h3>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half-stroke"></i>
             </div>
             <div class="card">
               <div class="card-me">
-                <p>$10.99</p>
+                <h3>$10.99</h3>
                 <button id="btn">Add To Card</button>
               </div>
             </div>
@@ -256,16 +430,16 @@ border-style:;
         
           <div class="awesome">
             <div class="awesome-me">
-              <p>Tasty Food</p>
-              <i class="fa-regular fa-star"></i>
-              <i class="fa-regular fa-star"></i>
-              <i class="fa-regular fa-star"></i>
-              <i class="fa-regular fa-star"></i>
-              <i class="fa-regular fa-star"></i>
+              <h3>Tasty Food</h3>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half-stroke"></i>
             </div>
             <div class="card">
               <div class="card-me">
-                <p>$10.99</p>
+                <h3>$10.99</h3>
                 <button id="btn">Add To Card</button>
               </div>
             </div>
@@ -278,16 +452,16 @@ border-style:;
           
           <div class="awesome">
             <div class="awesome-me">
-              <p>Tasty Food</p>
-              <i class="fa-regular fa-star"></i>
-              <i class="fa-regular fa-star"></i>
-              <i class="fa-regular fa-star"></i>
-              <i class="fa-regular fa-star"></i>
-              <i class="fa-regular fa-star"></i>
+              <h3>Tasty Food</h3>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half-stroke"></i>
             </div>
             <div class="card">
               <div class="card-me">
-                <p>$10.99</p>
+                <h3>$10.99</h3>
                 <button id="btn">Add To Card</button>
               </div>
             </div>
@@ -306,16 +480,16 @@ border-style:;
         
           <div class="awesome">
             <div class="awesome-me">
-              <p>Tasty Food</p>
-              <i class="fa-regular fa-star"></i>
-              <i class="fa-regular fa-star"></i>
-              <i class="fa-regular fa-star"></i>
-              <i class="fa-regular fa-star"></i>
-              <i class="fa-regular fa-star"></i>
+              <h3>Tasty Food</h3>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half-stroke"></i>
             </div>
             <div class="card">
               <div class="card-me">
-                <p>$10.99</p>
+                <h3>$10.99</h3>
                 <button id="btn">Add To Card</button>
               </div>
             </div>
@@ -328,16 +502,16 @@ border-style:;
          
           <div class="awesome">
             <div class="awesome-me">
-              <p>Tasty Food</p>
-              <i class="fa-regular fa-star"></i>
-              <i class="fa-regular fa-star"></i>
-              <i class="fa-regular fa-star"></i>
-              <i class="fa-regular fa-star"></i>
-              <i class="fa-regular fa-star"></i>
+              <h3>Tasty Food</h3>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half-stroke"></i>
             </div>
             <div class="card">
               <div class="card-me">
-                <p>$10.99</p>
+                <h3>$10.99</h3>
                 <button id="btn">Add To Card</button>
               </div>
             </div>
@@ -350,22 +524,37 @@ border-style:;
       
           <div class="awesome">
             <div class="awesome-me">
-              <p>Tasty Food</p>
-              <i class="fa-regular fa-star"></i>
-              <i class="fa-regular fa-star"></i>
-              <i class="fa-regular fa-star"></i>
-              <i class="fa-regular fa-star"></i>
-              <i class="fa-regular fa-star"></i>
+              <h3>Tasty Food</h3>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half-stroke"></i>
             </div>
             <div class="card">
               <div class="card-me">
-                <p>$10.99</p>
+                <h3>$10.99</h3>
                 <button id="btn">Add To Card</button>
               </div>
             </div>
           </div>
         </div>
   </div>
+
+  <div class="later2">   
+    <h3>About Us!</h3>
+    <h2>WHY CHOOSE US?</h2></div>
+        <div class="best">
+          <div class="country">
+            <img src="http://127.0.0.1:5500/image/photo-delicious-hamburger-isolated-white-background_125540-3378.avif" alt="">
+           
+          </div>
+          <div class="country2">
+            <h2>Best Food In The Country</h2>
+            <p>In a country like India taste of people changes after every few miles like their culture, tradition and language. India has a vast and different food, compared from the other cuisines in the world. The normal Indian meal contains few different tastes- spicy, sweet, salty, bitter and sour. The country is the land of herbs and spices.</p>
+          </div>
+        </div>
+</div>
 
 
 <!-- Swiper -->
@@ -408,19 +597,186 @@ border-style:;
 </div>
 </div>
 
+<!-- Our Menu -->
+<div class="google"><h3>Menu</h3></div>
+<div class="menubar">
+  <div class="menubar2">
 
-<div class="later2">   <h2>WHY CHOOSE US?</h2></div>
-        <div class="best">
-          <div class="country">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQULDPkJ8PfjDLulqB88WVtf4NmF2X_EurAIg&usqp=CAU" alt="">
-           
-          </div>
-          <div class="country2">
-            <h2>Best Food In The Country</h2>
-            <p>In a country like India taste of people changes after every few miles like their culture, tradition and language. India has a vast and different food, compared from the other cuisines in the world. The normal Indian meal contains few different tastes- spicy, sweet, salty, bitter and sour. The country is the land of herbs and spices.</p>
+<div class="menu">
+  <div class="menu-me">
+   <div class="heart">
+    <div class="heart2">
+      <i class="fa-solid fa-heart"></i>
+    </div>
+   </div>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ78XmWppDDDO3VdIHnRCaFz6sG7CvkvD3WAA&usqp=CAU" alt="">
+    <div class="star">
+      <div class="star2">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star-half-stroke"></i>
+        <h3>Delicious Food</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <button class="btn">Add To Card</button>
+        <div class="doller">
+          <div class="doller2">
+            <div class="doller3"><h3>$5.99</h3></div>
           </div>
         </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="menu-me">
+    <div class="heart">
+     <div class="heart2">
+       <i class="fa-solid fa-heart"></i>
+     </div>
+    </div>
+     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ78XmWppDDDO3VdIHnRCaFz6sG7CvkvD3WAA&usqp=CAU" alt="">
+     <div class="star">
+       <div class="star2">
+         <i class="fa-solid fa-star"></i>
+         <i class="fa-solid fa-star"></i>
+         <i class="fa-solid fa-star"></i>
+         <i class="fa-solid fa-star"></i>
+         <i class="fa-solid fa-star-half-stroke"></i>
+         <h3>Delicious Food</h3>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+         <button class="btn">Add To Card</button>
+         <div class="doller">
+           <div class="doller2"><h3>$5.99</h3></div>
+         </div>
+       </div>
+     </div>
+   </div>
+
+   <div class="menu-me">
+    <div class="heart">
+     <div class="heart2">
+       <i class="fa-solid fa-heart"></i>
+     </div>
+    </div>
+     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ78XmWppDDDO3VdIHnRCaFz6sG7CvkvD3WAA&usqp=CAU" alt="">
+     <div class="star">
+       <div class="star2">
+         <i class="fa-solid fa-star"></i>
+         <i class="fa-solid fa-star"></i>
+         <i class="fa-solid fa-star"></i>
+         <i class="fa-solid fa-star"></i>
+         <i class="fa-solid fa-star-half-stroke"></i>
+         <h3>Delicious Food</h3>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+         <button class="btn">Add To Card</button>
+         <div class="doller">
+           <div class="doller2"><h3>$5.99</h3></div>
+         </div>
+       </div>
+     </div>
+   </div>
+
 </div>
+  </div>
+</div>
+
+<!-- Our Menu -->
+<div class="menubar">
+  <div class="menubar2">
+
+<div class="menu">
+  <div class="menu-me">
+   <div class="heart">
+    <div class="heart2">
+      <i class="fa-solid fa-heart"></i>
+    </div>
+   </div>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ78XmWppDDDO3VdIHnRCaFz6sG7CvkvD3WAA&usqp=CAU" alt="">
+    <div class="star">
+      <div class="star2">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star-half-stroke"></i>
+        <h3>Delicious Food</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <button class="btn">Add To Card</button>
+        <div class="doller">
+          <div class="doller2">
+            <div class="doller3"><h3>$5.99</h3></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="menu-me">
+    <div class="heart">
+     <div class="heart2">
+       <i class="fa-solid fa-heart"></i>
+     </div>
+    </div>
+     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ78XmWppDDDO3VdIHnRCaFz6sG7CvkvD3WAA&usqp=CAU" alt="">
+     <div class="star">
+       <div class="star2">
+         <i class="fa-solid fa-star"></i>
+         <i class="fa-solid fa-star"></i>
+         <i class="fa-solid fa-star"></i>
+         <i class="fa-solid fa-star"></i>
+         <i class="fa-solid fa-star-half-stroke"></i>
+         <h3>Delicious Food</h3>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+         <button class="btn">Add To Card</button>
+         <div class="doller">
+           <div class="doller2"><h3>$5.99</h3></div>
+         </div>
+       </div>
+     </div>
+   </div>
+
+   <div class="menu-me">
+    <div class="heart">
+     <div class="heart2">
+       <i class="fa-solid fa-heart"></i>
+     </div>
+    </div>
+     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ78XmWppDDDO3VdIHnRCaFz6sG7CvkvD3WAA&usqp=CAU" alt="">
+     <div class="star">
+       <div class="star2">
+         <i class="fa-solid fa-star"></i>
+         <i class="fa-solid fa-star"></i>
+         <i class="fa-solid fa-star"></i>
+         <i class="fa-solid fa-star"></i>
+         <i class="fa-solid fa-star-half-stroke"></i>
+         <h3>Delicious Food</h3>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+         <button class="btn">Add To Card</button>
+         <div class="doller">
+           <div class="doller2"><h3>$5.99</h3></div>
+         </div>
+       </div>
+     </div>
+   </div>
+
+</div>
+  </div>
+</div>
+
+<div class="founder">
+  <form name="submit-to-google-sheet" >
+    <input type="text" name="Name" placeholder="Your name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <textarea name="Message" rows="6" placeholder="Your Message" ></textarea>
+    <button type="submit"class="btn btn2">SUBMIT</button>
+    
+</form>
+</div>
+
+
+
+
     
 
 
@@ -451,6 +807,16 @@ border-style:;
       el: ".swiper-pagination",
     },
   });
+</script>
+<script>
+  var sidemenu = document.getElementById("sidemenu");
+
+  function openmenu(){
+      sidemenu.style.right ="0";
+  }
+  function closemenu(){
+      sidemenu.style.right ="-200px";
+  }
 </script>
 </body>
 </html>
